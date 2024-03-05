@@ -72,5 +72,6 @@ Cypress.Commands.add("InvalidUsernamePassword",()=>{
   cy.get("input[name='password']").type(logInData.invalidPassword);
   cy.get("button[type='submit']").click();
   cy.contains("Invalid credentials").should("be.visible");
+  
 
 });
